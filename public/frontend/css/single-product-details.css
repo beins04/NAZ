@@ -1,0 +1,681 @@
+.container-product {
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    max-width: 1200px;
+    justify-content: center;
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .product-container {
+        margin-left: 0;
+        padding: 10px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.product-image1 img {
+    width: 500px;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-details {
+    flex: 2;
+    padding-left: 50px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.versions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.version-button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: black;
+    color: white; /* Để đảm bảo nội dung nút dễ đọc */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.version-button:hover {
+    background-color: #000000; /* Màu nền khi hover */
+    color: #fff; /* Màu chữ khi hover */
+    transform: scale(1.05); /* Tăng nhẹ kích thước nút */
+    background-color: black;
+}
+.status-price {
+    margin-bottom: 20px;
+}
+.status-price strong {
+    color: black;
+    font-weight: bold;
+}
+.quantity input {
+    width: 110px;
+    height: 40px;
+    margin: 0 auto;
+    border: none;
+    background-color: #fff8f3;
+    margin-bottom: 10px;
+    outline: none;
+    text-align: center;
+    display: block;
+}
+
+.quantity {
+    border: 1px solid black;
+    display: flex;
+    width: 230px;
+    height: 44px;
+    margin-bottom: 28px;
+    border-radius: 2px;
+}
+.btn-minus,
+.btn-plus {
+    background-color: #fff8f3;
+    color: #000;
+}
+.btn-minus:hover,
+.btn-plus:hover {
+    background-color: #000;
+    color: white;
+    border-radius: 2px;
+}
+.add-to-cart-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn:hover {
+    transform: scale(1.05) translateY(-2px);
+    transition: transform 0.2s ease;
+    background-color: #000;
+}
+
+.wishlist {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}
+
+.wishlist span {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.wishlist span.active {
+    color: red;
+}
+.container-detail {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.description-section {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.description-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description-section h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #555;
+}
+
+.description-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.product-image2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-image2 img {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.more-button:hover {
+    transform: scale(1.05) translateY(-2px);
+    transition: transform 0.2s ease;
+    background-color: #000;
+}
+
+/* General Styling for the Review Section */
+.review-section {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    min-height: 200px;
+    max-height: 400px;
+    height: fit-content;
+}
+.review-section-comment {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    height: auto;
+}
+
+.ctn-comment {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.btn-comment:hover {
+    transform: scale(1.05) translateY(-2px);
+    transition: transform 0.2s ease;
+    background-color: #000;
+}
+
+/* Review Section Heading */
+.review-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Rating Display */
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.rating-score {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff9800;
+    margin-right: 10px;
+}
+
+.rating-stars {
+    font-size: 1.5rem;
+    color: #ff9800;
+}
+
+/* Write Review Section */
+.write-review {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.write-review label {
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Review Textarea */
+.write-review textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    min-height: 100px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.write-review textarea:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
+
+/* Star Input Section */
+.star-input {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    user-select: none;
+}
+
+.star-input:hover {
+    color: #ff9800;
+}
+
+/* Style for active stars */
+.star-input span.active {
+    color: #ff9800;
+}
+
+/* Add some hover effects */
+textarea:hover,
+.star-input:hover {
+    background-color: #fefcf6;
+}
+
+/* Review Header Section */
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-controls label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.filter-controls select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.filter-controls select:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
+.product-recommendation {
+    display: block;
+    clear: both;
+    margin-top: 20px;
+}
+
+.product-recommendation h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    column-gap: 70px;
+    justify-content: center;
+}
+/* General Styling for the Review Section */
+.review-section {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Review Section Heading */
+.review-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Rating Display */
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.rating-score {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff9800;
+    margin-right: 10px;
+}
+
+.rating-stars {
+    font-size: 1.5rem;
+    color: #ff9800;
+}
+
+/* Write Review Section */
+.write-review {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.write-review label {
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Review Textarea */
+.write-review textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    min-height: 100px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.write-review textarea:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
+
+/* Star Input Section */
+.star-input {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    user-select: none;
+}
+
+.star-input:hover {
+    color: #ff9800;
+}
+
+/* Style for active stars */
+.star-input span.active {
+    color: #ff9800;
+}
+
+/* Add some hover effects */
+textarea:hover,
+.star-input:hover {
+    background-color: #fefcf6;
+}
+
+/* Review Header Section */
+.review-header span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    font-size: 25px;
+}
+
+/* Styling cụ thể cho sản phẩm */
+.product-recommendation h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.product-card p {
+    font-size: 20px;
+    color: black;
+    margin: 5px 0;
+}
+.product-card a {
+    color: black;
+}
+.product-card strong {
+    font-size: 1rem;
+    color: #000;
+}
+.review-section2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.comment-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment-item:last-child {
+    border-bottom: none;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-author {
+    font-size: 1rem;
+}
+
+.comment-date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.comment-body {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.comment-rating {
+    font-size: 0.9rem;
+    color: #ff9800;
+    font-weight: bold;
+}
+.ctn-rating {
+    display: flex;
+    column-gap: 100px;
+}
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.product-card img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 280px;
+}
+
+.product-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 25px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 10px;
+    display: inline-block;
+    line-height: 25px;
+    z-index: 1;
+}
+.pre-oder-new-arrivals {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 600;
+    background-color: red;
+    width: 80px;
+    height: 15px;
+    border-radius: 10px;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.pre-oder-new-arrivals span {
+    color: white !important;
+    text-align: center;
+}
+.status-product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pre-order {
+    position: relative;
+    right: 250px;
+    bottom: 5px;
+}
+.pre-order span {
+    margin-left: 7px;
+}
+.normal {
+    position: relative;
+    right: 250px;
+    bottom: 5px;
+    background-color: #555;
+    border: #555;
+}
+.normal span {
+    margin-left: 16px;
+    color: white;
+    border-radius: #555;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a,
+.pagination span {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+.pagination .active span {
+    background-color: white;
+    color: #fff;
+    border-color: black;
+}
+.pagination a:hover {
+    background-color: white;
+}
+
+.product-favourite a{
+    cursor: pointer;
+}
+.star-input {
+    display: flex;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.star {
+    color: white; 
+    transition: color 0.3s;
+    -webkit-text-stroke: 1px #ff9800; 
+}
+
+.star.selected {
+    color: #ff9800; 
+}

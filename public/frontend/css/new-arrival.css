@@ -1,0 +1,227 @@
+.container-th2-new-arrival {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.container-new-arrival {
+    padding: 50px;
+}
+.container-new-arrival h1 {
+    text-align: center;
+}
+.product-new-arrival-col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 20px; /* Khoảng cách giữa các sản phẩm trong hàng */
+}
+.sidebar {
+    flex: 1;
+    max-width: 300px;
+    padding-right: 20px;
+}
+
+.sidebar h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li span {
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các sản phẩm tự động xuống dòng */
+    justify-content: space-between; /* Căn đều khoảng cách giữa các sản phẩm */
+    row-gap: 50px; /* Khoảng cách giữa các hàng */
+}
+
+.product-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1 1 calc(33.33% - 20px); /* Đảm bảo mỗi sản phẩm chiếm 1/3 hàng, trừ khoảng cách */
+    width: 350px; /* Giới hạn chiều rộng tối đa */
+    height: auto;
+    box-sizing: border-box;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Thêm khoảng cách dưới hình ảnh */
+}
+
+.container-pc h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.container-pc{
+    margin-left: 10px;
+}
+
+.container-pc p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .container-th2-new-arrival {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .sidebar {
+        max-width: 100%;
+        padding-right: 10px;
+    }
+    .sidebar h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .sidebar ul li span {
+        font-size: 16px;
+    }
+     .products {
+        row-gap: 15px; /* Giảm khoảng cách giữa các hàng */
+    }
+    .product-card {
+        flex: 1 1 calc(50% - 10px); /* Hiển thị 2 sản phẩm mỗi hàng */
+        max-width: calc(50% - 10px); /* Giới hạn chiều rộng tối đa */
+    }
+    .container-pc h3 {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .container-pc p {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .pagination {
+        margin-top: 15px;
+    }
+    .pagination a {
+        font-size: 16px;
+    }
+    .vertical-line {
+        height: 50vh;
+        margin: 0 10px;
+    }
+    .navigation {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+    .menu {
+        width: 100%;
+        padding: 5px;
+    }
+    .menu-header {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .submenu li {
+        font-size: 12px;
+    }
+     .product-card img {
+        max-height: 150px; /* Giới hạn chiều cao hình ảnh */
+    }
+}
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-item .page-link {
+    color: #333;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    padding: 8px 12px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+.pagination-container{
+    margin-bottom: 20px;
+}
+.pre-oder-new-arrivals {
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 0.75px;
+    font-weight: 600;
+    background-color: red;
+    width: 80px;
+    height: 15px;
+    border-radius: 10px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pre-oder-new-arrivals span {
+    color: white !important;
+}
+.card-text{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+ .hover-content {
+    position: absolute;
+    width: calc(100% - 40px);
+    top: 200px;
+    left: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+ .hover-content .essence-btn {
+    width: 100%;
+}
+ .hover-content .essence-btn:hover {
+    background-color: black;
+}
+.card:hover .hover-content {
+    opacity: 1;
+    visibility: visible;
+}
+.product-badge {
+    height: 25px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 10px;
+    display: inline-block;
+    line-height: 25px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
